@@ -16,16 +16,16 @@ const taskLoader = async () => {
 //creates a router instance
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App></App>, //acts as the parent root and will keep navbar in display 
+    path: "/VSTDA",
+    element: <App />,
     children: [
       {
-        path: "/",
-        element: <Home></Home>,
-        loader: taskLoader, //attached to both children to fetch data
+        path: "/VSTDA",
+        element: <Home />,
+        loader: taskLoader,
       },
       {
-        path: "/dashboard",
+        path: "/VSTDA/dashboard",
         element: <Dashboard />,
         loader: taskLoader,
       },
